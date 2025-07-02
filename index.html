@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shoplicity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Shoplicity</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search products...">
+    </div>
+    <nav>
+       <a href="cart.html">🛒 Cart: <span id="cart-total">0</span></a>
+
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+  </header>
+       <div class="hero-banner">
+    🎉 Big Sale! Up to 50% off on all products – Limited Time Offer!
+  </div>
+
+  <div class="countdown-container">
+    <div class="countdown-title">Sale Ends In:</div>
+    <div class="flip-clock" id="flip-clock">
+      <div class="flip-unit" id="days">00</div>
+      <div class="flip-unit" id="hours">00</div>
+      <div class="flip-unit" id="minutes">00</div>
+      <div class="flip-unit" id="seconds">00</div>
+    </div>
+  </div>
+  <section class="products">
+    <div class="product-grid js-prod-grid">
+      <div class="product-card">
+      <img src="images/wireless headphn boat.webp" alt="Product">
+      <h3> Boat Wireless Headphones</h3>
+      <div class="bottom-group">
+        <p class="original-price">₹1900</p>
+        <p class="discounted-price"></p>
+        <div class="product-quantity-container">
+            <select class="js-quantity-selector" data-testid="quantity-selector">
+              <option selected="" value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        <button class="add-to-cart-btn" data-id="1">Add to Cart</button>
+           <a href="product.html?product=boat-headphones"><button>BUY NOW</button></a>
+
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="images/watch fastrack.webp" alt="Product">
+      <div class="bottom-group">
+        <h3>Smart Watch</h3>
+        <div class="sale-badge">50% OFF</div>
+        <p class="price">
+  <span class="original-price">₹1499</span>
+  <span class="discounted-price"></span>
+</p>
+        <div class="product-quantity-container">
+            <select class="js-quantity-selector" data-testid="quantity-selector">
+              <option selected="" value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+<button class="add-to-cart-btn"  data-id="1">Add to Cart</button>
+
+      <a href="product.html?product=smart-watch"><button>BUY NOW</button></a>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="images/gaming mouse RPM.jpg" alt="Product">
+      <div class="bottom-group">
+        <h3>Gaming Mouse</h3>
+        <p class="original-price">₹999</p>
+        <p class="discounted-price"></p>
+        <div class="product-quantity-container">
+            <select class="js-quantity-selector" data-testid="quantity-selector">
+              <option selected="" value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+       <button class="add-to-cart-btn" data-id="1">Add to Cart</button>
+
+      <a href="product.html?product=gaming-mouse"><button>BUY NOW</button></a>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="images/bluetooth speaker zebronics astra 35.webp" alt="Product">
+      <div class="bottom-group">
+        <h3> Zebronics astra 35 Bluetooth Speaker</h3>
+        <div class="sale-badge">50% OFF</div>
+<p class="price">
+  <span class="original-price">₹3999</span>
+  <span class="discounted-price">₹999</span>
+</p>
+        <div class="product-quantity-container">
+            <select class="js-quantity-selector" data-testid="quantity-selector">
+              <option selected="" value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+       <button class="add-to-cart-btn"data-id="1">Add to Cart</button>
+
+      <a href="product.html?product=bluetooth-speaker"><button>BUY NOW</button></a>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="images/poartable charger boat.webp" alt="Product">
+      <div class="bottom-group">
+        <h3> boat Portable Charger</h3>
+        <p class="original-price">₹499</p>
+        <p class="discounted-price"></p>
+        <div class="product-quantity-container">
+            <select class="js-quantity-selector" data-testid="quantity-selector">
+              <option selected="" value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        <button class="add-to-cart-btn" data-id="1">Add to Cart</button>
+
+      <a href="product.html?product=powerbank"><button>BUY NOW</button></a>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="images/0016823_canon-eos-90d-dslr-camera-with-18-135mm-lens_500.jpeg" alt="Product">
+      <div class="bottom-group">
+        <h3>DSLR Camera</h3>
+        <div class="sale-badge">50% OFF</div>
+        <p class="price">
+  <span class="original-price">₹150000</span>
+  <span class="discounted-price"></span>
+</p>
+        <div class="product-quantity-container">
+            <select class="js-quantity-selector" data-testid="quantity-selector">
+              <option selected="" value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        <button class="add-to-cart-btn"data-id="1">Add to Cart</button>
+
+     <a href="product.html?product=dslr-camera"><button>BUY NOW</button></a>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="images/Zebronics laptop stand.webp" alt="Product">
+      <div class="bottom-group">
+        <h3>Zebronics Laptop Stand</h3>
+        <p class="original-price">₹999</p>
+        <p class="discounted-price"></p>
+        <div class="product-quantity-container">
+            <select class="js-quantity-selector" data-testid="quantity-selector">
+              <option selected="" value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+ <button class="add-to-cart-btn"data-id="1">Add to Cart</button>
+
+              <a href="product.html?product=laptop-stand"><button>BUY NOW</button></a>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="images/keyboard.webp" alt="Product">
+      <div class="bottom-group">
+        <h3>ASUS Marshmallow Kw100 Keyboard</h3>
+          <p class="price">
+  <span class="original-price">₹2399</span>
+  <span class="discounted-price"></span>
+</p>
+          <div class="product-quantity-container">
+            <select class="js-quantity-selector" data-testid="quantity-selector">
+              <option selected="" value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        <button class="add-to-cart-btn"data-id="1">Add to Cart</button>
+
+       <a href="product.html?product=asus-keyboard"><button>BUY NOW</button></a>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="images/buds.webp" alt="Product">
+      <div class="bottom-group">
+        <h3> Boat Noise Cancelling Earbuds</h3>
+          <div class="sale-badge">50% OFF</div>
+          <p class="price">
+  <span class="original-price">₹2499</span>
+  <span class="discounted-price"></span>
+</p>
+          <div class="product-quantity-container">
+            <select class="js-quantity-selector" data-testid="quantity-selector">
+              <option selected="" value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+       <button class="add-to-cart-btn" data-id="1">Add to Cart</button>
+
+      
+        <a href="product.html?product=boat-earbuds"><button>BUY NOW</button></a>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="images/bulb.avif" alt="Product">
+      <div class="bottom-group">
+        <h3>Philps Smart LED Light</h3>
+  <p class="original-price">₹999</p>
+        <p class="discounted-price"></p>
+        <div class="product-quantity-container">
+            <select class="js-quantity-selector" data-testid="quantity-selector">
+              <option selected="" value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        <button class="add-to-cart-btn" data-id="1">Add to Cart</button>
+
+      
+        <a href="product.html?product=smart-bulb"><button>BUY NOW</button></a>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="images/sun expert.webp" alt="Product">
+      <div class="bottom-group">
+        <h3>lakme Sun Expert SPF 50 Lotion Mini Pack</h3>
+        <div class="sale-badge">50% OFF</div>
+        <p class="price">
+  <span class="original-price">₹199</span>
+  <span class="discounted-price"></span>
+</p>
+        <div class="product-quantity-container">
+            <select class="js-quantity-selector" data-testid="quantity-selector">
+              <option selected="" value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        <button class="add-to-cart-btn" data-id="1">Add to Cart</button>
+        <a href="product.html?product=lakme-sunscreen"><button>BUY NOW</button></a>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="images/skybags.webp" alt="Product">
+      <div class="bottom-group">
+        <h3>Skybags Set Of 3 BEAT-PRO Solid Hard Trolley Suitcases</h3>
+        <div class="sale-badge">50% OFF</div>
+        <p class="price">
+  <span class="original-price">₹6400</span>
+  <span class="discounted-price"></span>
+</p>
+        <div class="product-quantity-container">
+            <select class="js-quantity-selector" data-testid="quantity-selector">
+              <option selected="" value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        <button class="add-to-cart-btn" data-id="1">Add to Cart</button>
+
+      
+        <a href="product.html?product=skybags-luggage"><button>BUY NOW</button></a>
+      </div>
+    </div>
+    </div>
+
+  </section>
+  <section class="category-section">
+  <div class="category-card">
+    <h2>Beauty products for you</h2>
+    <div class="category-grid">
+      <div><img src="images/Skincare.jpeg" alt="Skincare"><p>Skincare</p></div>
+      <div><img src="images/Makeup.jpeg" alt="Makeup"><p>Makeup</p></div>
+      <div><img src="images/Nails.jpeg" alt="Nails"><p>Nails</p></div>
+      <div><img src="images/Fragrances.jpeg" alt="Fragrance"><p>Fragrances</p></div>
+    </div>
+     <a href="#">Discover more</a>
+  </div>
+
+  <div class="category-card">
+    <h2>Halloween finds</h2>
+    <div class="category-grid">
+      <div><img src="images/Dress up.jpeg" alt="Dress up"><p>Dress up</p></div>
+      <div><img src="images/Indoor decorations.jpeg" alt="Indoor"><p>Indoor decorations</p></div>
+      <div><img src="images/Outdoor decorations.jpeg" alt="Outdoor"><p>Outdoor decorations</p></div>
+      <div><img src="images/Deals.jpeg" alt="Deals"><p>Deals</p></div>
+    </div>
+       <a href="#">Discover more</a>
+  </div>
+
+  <div class="category-card">
+    <h2>loved travel essentials</h2>
+    <div class="category-grid">
+      <div><img src="images/Backpacks.jpeg" alt="Backpacks"><p>Backpacks</p></div>
+      <div><img src="images/Suitcases.jpeg" alt="Suitcases"><p>Suitcases</p></div>
+      <div><img src="images/Accessories.jpeg" alt="Accessories"><p>Accessories</p></div>
+      <div><img src="images/Handbags.jpeg" alt="Handbags"><p>Handbags</p></div>
+    </div>
+    <a href="#">Discover more</a>
+  </div>
+
+  <div class="category-card">
+    <h2>Items for Wishlist</h2>
+    <div class="category-grid">
+      <div><img src="images/Nursery.jpeg" alt="Nursery"><p>Nursery</p></div>
+      <div><img src="images/Clothing.jpeg" alt="Clothing"><p>Clothing</p></div>
+      <div><img src="images/Prams & Strollers.jpg" alt="Stroller"><p>Prams & Strollers</p></div>
+      <div><img src="images/Toys.jpeg" alt="Toys"><p>Toys</p></div>
+    </div>
+       <a href="#">Discover more</a>
+  </div>
+</section>
+
+  <script type="module" src="script.js"></script> 
+  <script src="cart.js"></script>
+
+<script>
+  updateCartCount(); 
+  document.addEventListener("DOMContentLoaded", () => {
+   document.querySelectorAll(".add-to-cart-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    const product = getProductData(button);
+    addToCart(product);
+    showPopup(`${product.name} added to cart`);
+  });
+});
+
+    });
+
+    // Auto calculate 50% discount if sale badge present
+    document.querySelectorAll('.product-card').forEach(card => {
+      const saleBadge = card.querySelector('.sale-badge');
+      const original = card.querySelector('.original-price');
+      const discounted = card.querySelector('.discounted-price');
+
+      if (saleBadge && original && discounted) {
+        const og = parseFloat(original.innerText.replace(/[₹,]/g, ''));
+        if (!isNaN(og)) {
+          const half = Math.round(og / 2);
+          discounted.textContent = `₹${half}`;
+        }
+      }
+    });
+
+
+  // Countdown logic
+  const endDate = new Date();
+  endDate.setHours(endDate.getHours() + 48);
+  function updateClock() {
+    const now = new Date().getTime();
+    const timeLeft = endDate.getTime() - now;
+    if (timeLeft <= 0) return;
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+    const seconds = Math.floor((timeLeft / 1000) % 60);
+    document.getElementById("days").textContent = String(days).padStart(2, '0');
+    document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+  }
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
+
+
+
+</body>
+</html>
