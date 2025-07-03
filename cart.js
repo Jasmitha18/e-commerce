@@ -77,7 +77,7 @@ function renderCartItems() {
       </div>
       <div class="cart-right">
         <input type="number" min="1" value="${item.quantity}" onchange="updateQuantity(${index}, this.value)" />
-        <button onclick="removeItem(${index})">Delete</button>
+        <button onclick="removeFromCart('${item.name}')">Delete</button>
       </div>
     `;
     cartList.appendChild(li);
@@ -168,7 +168,7 @@ function applyCoupon() {
   }
 }
 
-// --- Place order form validation ---
+
 function placeOrder() {
   const name = document.querySelector('input[placeholder="Full Name"]')?.value;
   const email = document.querySelector('input[placeholder="Email"]')?.value;
@@ -189,7 +189,7 @@ function placeOrder() {
 }
 
 
-// --- Make functions global for HTML calls ---
+
 window.addToCart = addToCart;
 window.removeFromCart = removeFromCart;
 window.updateCartItem = updateCartItem;
